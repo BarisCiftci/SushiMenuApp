@@ -82,10 +82,15 @@ struct SwiftUIViewSlots: View {
         }
     }
     
+    private func getRandomImageIndex() -> Int {
+        let maxIndexRange: Int = images.count - 1
+        return Int.random(in: 0...maxIndexRange)
+    }
+    
     private func playButtonAction() {
-        randomImageFirst = Int.random(in: 0...2)
-        randomImageSecond = Int.random(in: 0...2)
-        randomImageThird = Int.random(in: 0...2)
+        randomImageFirst = getRandomImageIndex()
+        randomImageSecond = getRandomImageIndex()
+        randomImageThird = getRandomImageIndex()
         
         if (randomImageFirst == 0) && (randomImageSecond == 0) && (randomImageThird == 0){
             score += 10
