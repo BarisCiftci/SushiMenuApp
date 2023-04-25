@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D40A36929F71B2500D08D0D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D40A36829F71B2500D08D0D /* SwiftUIView.swift */; };
+		3DA5153B29F8542E0047AA91 /* SushiGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA5153A29F8542E0047AA91 /* SushiGame.swift */; };
 		3DE9591429EC635C00A7E4F6 /* SushiMenuAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE9591329EC635C00A7E4F6 /* SushiMenuAppApp.swift */; };
 		3DE9591629EC635C00A7E4F6 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE9591529EC635C00A7E4F6 /* MenuView.swift */; };
 		3DE9591829EC635F00A7E4F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE9591729EC635F00A7E4F6 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D40A36829F71B2500D08D0D /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		3DA5153A29F8542E0047AA91 /* SushiGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiGame.swift; sourceTree = "<group>"; };
 		3DE9591029EC635C00A7E4F6 /* SushiMenuApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SushiMenuApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE9591329EC635C00A7E4F6 /* SushiMenuAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiMenuAppApp.swift; sourceTree = "<group>"; };
 		3DE9591529EC635C00A7E4F6 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 				3DE9592129EC663300A7E4F6 /* MenuItem.swift */,
 				3DE9592529F0807600A7E4F6 /* DataService.swift */,
 				3DE9592329EC707400A7E4F6 /* Challenge.swift */,
+				3D40A36829F71B2500D08D0D /* SwiftUIView.swift */,
+				3DA5153A29F8542E0047AA91 /* SushiGame.swift */,
 				3DE9591729EC635F00A7E4F6 /* Assets.xcassets */,
 				3DE9591929EC635F00A7E4F6 /* Preview Content */,
 			);
@@ -150,8 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DE9592629F0807600A7E4F6 /* DataService.swift in Sources */,
+				3D40A36929F71B2500D08D0D /* SwiftUIView.swift in Sources */,
 				3DE9592829F1CC5600A7E4F6 /* MenuListRow.swift in Sources */,
 				3DE9592229EC663300A7E4F6 /* MenuItem.swift in Sources */,
+				3DA5153B29F8542E0047AA91 /* SushiGame.swift in Sources */,
 				3DE9592429EC707400A7E4F6 /* Challenge.swift in Sources */,
 				3DE9591629EC635C00A7E4F6 /* MenuView.swift in Sources */,
 				3DE9591429EC635C00A7E4F6 /* SushiMenuAppApp.swift in Sources */,
