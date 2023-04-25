@@ -12,8 +12,12 @@ struct SwiftUIViewSlots: View {
     let images: [String] = ["hamachi-sushi","ikura-sushi", "meguro-sushi"]
     
     let GAME_TITLE: String = "Sushi Game!"
+    let BUTTON_TEXT: String = "Play"
     let SCORE_TEXT: String = "Score: "
     
+    let CORNER_RADIUS_BUTTON: CGFloat = 30
+    let CORNER_RADIUS_IMAGE: CGFloat = 20
+      
     @State var randomImageFirst: Int = 0
     @State var randomImageSecond: Int = 0
     @State var randomImageThird: Int = 0
@@ -67,7 +71,7 @@ struct SwiftUIViewSlots: View {
         return Image(images[imageIndex])
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .cornerRadius(20)
+            .cornerRadius(CORNER_RADIUS_IMAGE)
     }
     
     private func gamePlayButton() -> Button<some View> {
@@ -95,13 +99,13 @@ struct SwiftUIViewSlots: View {
     }
     
     private func playButtonUI() -> some View {
-        return Text("Play")
+        return Text(BUTTON_TEXT)
             .foregroundColor(.white)
             .fontWeight(.black)
             .padding()
             .padding(.horizontal)
             .background(Color.pink)
-            .cornerRadius(30)
+            .cornerRadius(CORNER_RADIUS_BUTTON)
     }
 }
 
