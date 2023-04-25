@@ -31,16 +31,12 @@ struct SwiftUIViewSlots: View {
             
             Spacer()
             
-            HStack {
-                getTile(imageIndex: randomImageFirst)
-                getTile(imageIndex: randomImageSecond)
-                getTile(imageIndex: randomImageThird)
-            }
-            .padding()
+            gameTiles()
             
             Spacer()
             
-            playButton()
+            gamePlayButton()
+            
             Spacer()
         }
     }
@@ -58,6 +54,15 @@ struct SwiftUIViewSlots: View {
             .fontWeight(.bold)
     }
     
+    private func gameTiles() -> some View {
+        return HStack {
+            getTile(imageIndex: randomImageFirst)
+            getTile(imageIndex: randomImageSecond)
+            getTile(imageIndex: randomImageThird)
+        }
+        .padding()
+    }
+    
     private func getTile(imageIndex: Int) -> some View {
         return Image(images[imageIndex])
             .resizable()
@@ -65,7 +70,7 @@ struct SwiftUIViewSlots: View {
             .cornerRadius(20)
     }
     
-    private func playButton() -> Button<some View> {
+    private func gamePlayButton() -> Button<some View> {
         return Button {
             playButtonAction()
         } label: {
@@ -98,7 +103,6 @@ struct SwiftUIViewSlots: View {
             .background(Color.pink)
             .cornerRadius(30)
     }
-    
 }
 
 struct SwiftUIViewSlots_Previews: PreviewProvider {
