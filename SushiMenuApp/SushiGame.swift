@@ -9,9 +9,7 @@ import SwiftUI
 
 struct SwiftUIViewSlots: View {
     
-    let imageFirst: [String] = ["hamachi-sushi","ikura-sushi", "meguro-sushi"]
-    let imageSecond: [String] = ["hamachi-sushi","ikura-sushi", "meguro-sushi"]
-    let imageThird: [String] = ["hamachi-sushi","ikura-sushi", "meguro-sushi"]
+    let images: [String] = ["hamachi-sushi","ikura-sushi", "meguro-sushi"]
     
     let GAME_TITLE: String = "Sushi Game!"
     let SCORE_TEXT: String = "Score: "
@@ -34,15 +32,15 @@ struct SwiftUIViewSlots: View {
             Spacer()
             
             HStack {
-                Image(imageFirst[randomImageFirst])
+                Image(images[randomImageFirst])
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(20)
-                Image(imageSecond[randomImageSecond])
+                Image(images[randomImageSecond])
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(20)
-                Image(imageThird[randomImageThird])
+                Image(images[randomImageThird])
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(20)
