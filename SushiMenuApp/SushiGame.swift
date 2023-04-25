@@ -17,6 +17,9 @@ struct SwiftUIViewSlots: View {
     
     let CORNER_RADIUS_BUTTON: CGFloat = 30
     let CORNER_RADIUS_IMAGE: CGFloat = 20
+    
+    let SCORE_POINT_WIN: Int = 5
+    let SCORE_POINT_LOSE: Int = 1
       
     @State var randomImageFirst: Int = 0
     @State var randomImageSecond: Int = 0
@@ -93,13 +96,13 @@ struct SwiftUIViewSlots: View {
         randomImageThird = getRandomImageIndex()
         
         if (randomImageFirst == 0) && (randomImageSecond == 0) && (randomImageThird == 0){
-            score += 10
+            score += SCORE_POINT_WIN
         } else if (randomImageFirst == 1) && (randomImageSecond == 1) && (randomImageThird == 1){
-            score += 10
+            score += SCORE_POINT_WIN
         } else if (randomImageFirst == 2) && (randomImageSecond == 2) && (randomImageThird == 2) {
-            score += 10
+            score += SCORE_POINT_WIN
         } else {
-            score -= 1
+            score -= SCORE_POINT_LOSE
         }
     }
     
