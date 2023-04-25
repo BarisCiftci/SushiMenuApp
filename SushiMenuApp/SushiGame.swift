@@ -95,11 +95,7 @@ struct SwiftUIViewSlots: View {
         randomImageSecond = getRandomImageIndex()
         randomImageThird = getRandomImageIndex()
         
-        if (randomImageFirst == 0) && (randomImageSecond == 0) && (randomImageThird == 0){
-            score += SCORE_POINT_WIN
-        } else if (randomImageFirst == 1) && (randomImageSecond == 1) && (randomImageThird == 1){
-            score += SCORE_POINT_WIN
-        } else if (randomImageFirst == 2) && (randomImageSecond == 2) && (randomImageThird == 2) {
+        if (randomImageFirst == randomImageSecond) && (randomImageSecond == randomImageThird){
             score += SCORE_POINT_WIN
         } else {
             score -= SCORE_POINT_LOSE
