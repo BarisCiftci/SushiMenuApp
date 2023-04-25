@@ -32,18 +32,9 @@ struct SwiftUIViewSlots: View {
             Spacer()
             
             HStack {
-                Image(images[randomImageFirst])
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(20)
-                Image(images[randomImageSecond])
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(20)
-                Image(images[randomImageThird])
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(20)
+                getTile(imageIndex: randomImageFirst)
+                getTile(imageIndex: randomImageSecond)
+                getTile(imageIndex: randomImageThird)
             }
             .padding()
             
@@ -65,6 +56,13 @@ struct SwiftUIViewSlots: View {
     private func gameScoreUI() -> Text {
         return Text("\(SCORE_TEXT) \(score)")
             .fontWeight(.bold)
+    }
+    
+    private func getTile(imageIndex: Int) -> some View {
+        return Image(images[imageIndex])
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .cornerRadius(20)
     }
     
     private func playButton() -> Button<some View> {
